@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Smart Trax</title>
+  </head>
+  <body onload="fetchIssues()">
+  	<!-- Headline -->
+    <div class="container">
+    	<h1>Smart Trax <small style="color: grey;">a ticketing solution</small></h1>
+    
+	    <!-- Form -->
+	    <div class="jumbotron">
+	    	<h3>Add Server Issue:</h3>
+	    	<!-- DESCRIPTION -->
+	    	<form id="issueInputForm">
+	    		<div class="form-group">
+	    			<label for="issueDescInput">Description</label>
+	    			<input type="text" class="form-control" id="issueDescInput" placeholder="Describe the Issue">
+	    		</div>
+	    		<!-- SEVERITY/IMPORTANCE -->
+	    		<div class="form-group">
+	    			<label for="issueSeverityInput">Severity/Importance</label>
+	    			<select id="issueSeverityInput" class="form-control">
+	    				<option value="Low">Low</option>
+	    				<option value="Medium">Medium</option>
+	    				<option value="High">High</option>
+	    			</select>
+	    		</div>
+	    		<!-- ASSIGNED TO -->
+	    		<div class="form-group">
+	    			<label for="issueAssignedToInput">Assigned To</label>
+	    			<input type="text" class="form-control" id="issueAssignedToInput" placeholder="Engineer(s) Responsible">
+	    		</div>
+	    		<!-- BTN -->
+	    		<button type="submit" class="btn btn-primary">Add/Submit</button>
+	    	</form>
+	    </div>
+	    <div class="col-lg-12">
+	    	<!-- ISSUES GENERATED DYMANICALLY -->
+	    	<div id="issuesList">
+	    		
+	    	</div>
+	    	<div class="footer">
+	    		<p>&copy James Vongampai <small><a href="jamesthomasv.com">http://jamesthomasv.com</a></small></p>
+	    	</div>
+	    </div>
+	</div>
+    <!-- Optional JavaScript -->
+	<!-- * -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- 
+    	**END**
+    	jQuery first, then Popper.js, then Bootstrap JS 
+    -->
+
+    <!-- GLOBAL UNIQUE IDENTIFIERS - chance.js -->
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
